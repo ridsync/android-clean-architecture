@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app_first"
+    app:startDestination="@+id/frag_splash">
+
+    <fragment
+        android:id="@+id/frag_splash"
+        android:name="kr.clean.devoks.presentation.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_frag_splash_to_frag_main"
+            app:destination="@id/frag_signup"
+            app:popUpTo="@id/frag_splash"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/enter_fade_in"
+            app:exitAnim="@anim/exit_fade_out"
+            app:popEnterAnim="@anim/pop_enter_fade_in"
+            app:popExitAnim="@anim/pop_exit_fade_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/frag_signup"
+        android:name="kr.clean.devoks.presentation.signup.SignUpFragment"
+        android:label="signup"
+        tools:layout="@layout/fragment_signup">
+    </fragment>
+
+</navigation>

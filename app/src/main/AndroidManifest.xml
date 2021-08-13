@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="kr.clean.devoks">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="kr.clean.devoks.core.DevOKsApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.DevOKs"
+        tools:replace="android:allowBackup,android:fullBackupContent">
+        <activity
+            android:name="kr.clean.devoks.presentation.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat"
+            android:configChanges="orientation|keyboard|screenLayout|screenSize"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

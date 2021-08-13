@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#ff3526</color>
+    <color name="greyblue">#b2c2d7</color>
+    <color name="primarydark">#dd3b46</color>
+    <color name="color_bg_default">#ffffff</color>
+    <color name="color_text_default">#000000</color>
+    <color name="grey_50">#808080</color>
+    <color name="grey_90">#e6e6e6</color>
+    <color name="grey_70">#b2b2b2</color>
+    <color name="grey_94">#f0f0f0</color>
+    <color name="grey_80">#cccccc</color>
+    <color name="grey_96">#f5f5f5</color>
+    <color name="grey_98">#fafafa</color>
+    <color name="white_100">#ffffff</color>
+    <color name="black_100">#000000</color>
+
+</resources>
