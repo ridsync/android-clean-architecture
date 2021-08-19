@@ -24,11 +24,13 @@ Retrofit and Room
 
 
 ## Architecture Concept
+  - **Android MVVM CleanArchitecture**
   ![](https://github.com/ridsync/android-clean-architecture/blob/main/clean.png)
-  - Android MVVM CleanArchitecture
-  - Implement Business Logic
+  
+  - **Implement Business Logic**
       1. 앱 실행 - 로그인 ( 서버 상태 확인 후 로그인 프로세스)
       2. 회원가입
+  
   - **Presenstaion**
       1. UserInterface
           - 유저에게 시각적으로 보이고, 유저와 상호작용하는 뷰 영역
