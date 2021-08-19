@@ -21,7 +21,10 @@ Retrofit and Room
   6. Retrofit : 2.9.0
   7. Room : 2.3.0
     
+
+
 ## Architecture Concept
+  ![](https://github.com/ridsync/android-clean-architecture/blob/main/clean.png)
   - Android MVVM CleanArchitecture
   - Implement Business Logic
       1. 앱 실행 - 로그인 ( 서버 상태 확인 후 로그인 프로세스)
