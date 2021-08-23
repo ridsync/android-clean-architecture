@@ -18,8 +18,9 @@ Retrofit and Room
   3. Android compileSdkVersion : 30
   4. Hilt : 2.38.1
   5. Coroutine/Flow : kotlinx-coroutines-core:1.5.0
-  6. Retrofit : 2.9.0
-  7. Room : 2.3.0
+  6. MapStruct : 1.4.2.Final
+  7. Retrofit : 2.9.0
+  8. Room : 2.3.0
     
 
 
