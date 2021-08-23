@@ -48,8 +48,17 @@ Retrofit and Room
           - 어플리케이션의 주요 로직(?)을 담당하는 영역
           - UI,Data Layer 의 데이터 처리를 제외한 실제 소프트웨어 비즈니스의 주요 로직을 작성한다.
           - ex) Package | Domain > Interactor > SignUpUseCase
+      2. DomainDTO
+          - 어플리케이션의 도메인 데이터 전달 객체 (Data Transfer Object)
+          - ex) Package | Domain > Model > DomainDTO
+      3. State
+          - 어플리케이션의 주요 뷰,액션의 상태 정의 객체
+          - ex) Package | Domain > State > SignUpActionState
+      4. Repository
+          - 유스케이스에서 사용 할 Repository Interface 정의 클래스
+          - ex) Package | Domain > Repository > AuthRepository
   - **Data**
-      1. Repository
+      1. RepositoryImpl
           - 유스케이스가 필요로 하는 데이터 저장/수정 등의 기능을 제공하는 영역
           - ex) Package | Data > Repository > AuthRepositoryImpl
       2. DataSource(Retrofit, Room)
