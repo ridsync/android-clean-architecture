@@ -1,4 +1,4 @@
-package kr.clean.devoks.data.source.remote.grpc
+package kr.clean.devoks.data.source.remote.retrofit
 
 import kotlinx.coroutines.flow.*
 import kr.clean.devoks.core.di.CoroutinesDispatcherProvider

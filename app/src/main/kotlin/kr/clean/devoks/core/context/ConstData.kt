@@ -20,6 +20,7 @@ object ConstData {
     const val API_SERVER_URL = URL_PROTOCOL + SERVER_DOMAIN
 
     // Persistence
+    const val DATABASE_NAME = "clean_db"
     const val PREF_NAME_APP_SETTINGS = "spf_app_settings"
     const val PREF_NAME_USER_CONFIGS = "spf_user_configs"
 

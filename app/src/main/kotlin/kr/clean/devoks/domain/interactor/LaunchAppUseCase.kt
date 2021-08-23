@@ -15,19 +15,17 @@ import javax.inject.Inject
 // TODO @Experimental UseCase in Domain BL
 class LaunchAppUseCase @Inject constructor(
     private val suthRepository: AuthRepository,
+    private val loginUserCase: LoginUseCase,
     private val dataStore: AppDataStore
 ) {
 
     suspend fun launchAppProcess(versionCode: Int) = flow {
         // 앱 상태 체크 로직 TODO
         if(versionCode > 0) {
-            emit(AppsUserActionState.LoginSuccess)
+            emit(loginUserCase.userLogin().single())
         } else {
             emit(AppsUserActionState.Failure(DomainDTO.Failure(throwable = null)))
         }
-    }.catch { throwable ->
-        emit(AppsUserActionState.Failure(DomainDTO.Failure(throwable = throwable)))
-        throwable.printStackTrace()
     }
 
 }

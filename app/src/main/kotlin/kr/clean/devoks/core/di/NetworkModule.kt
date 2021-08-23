@@ -11,7 +11,7 @@ import kr.clean.devoks.core.context.ConstData.CONNECT_TIMEOUT
 import kr.clean.devoks.core.context.ConstData.READ_TIMEOUT
 import kr.clean.devoks.core.context.ConstData.WRITE_TIMEOUT
 import kr.clean.devoks.data.source.remote.AuthRemoteDataSource
-import kr.clean.devoks.data.source.remote.grpc.*
+import kr.clean.devoks.data.source.remote.retrofit.AuthRemoteDataSourceImpl
 import kr.clean.devoks.data.source.remote.retrofit.api.AuthAPI
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
